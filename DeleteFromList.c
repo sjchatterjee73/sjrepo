@@ -28,13 +28,13 @@ struct node * fun(int k, struct node * head){
 	struct node * current = NULL;
 	
 	// change the head, if head itself contains lower value than k.
-	// also traverse upto end, for deleting last node if it is less than k.
+	// and traverse untill we are getting a value which are greater than 'k'
 	while(temp != NULL && temp->data < k){
 		current = temp;
 		temp = temp->next;
 	}
 	
-	// delete the last node if it is less than k.
+	// unlink the temporary head from the list
 	if(current != NULL)
 		current->next = NULL;
 	
