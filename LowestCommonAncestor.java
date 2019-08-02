@@ -1,4 +1,3 @@
-package tree;
 /*
  * Lowest Common Ancestor [ ex -- finding common manager for two employees]
  * 
